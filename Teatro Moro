@@ -1,0 +1,48 @@
+#Teatro Moro
+
+Proceso sin_titulo
+
+    Definir aux Como Entero; //con una varaiable basta
+
+    aux = 0; // inicializo la variable
+
+    Escribir "Ingrese tipo de espectador:"; // opciones
+    Escribir "1.- Estudiante";
+    Escribir "2.- Publico general";
+
+    Leer aux;
+
+    segun aux Hacer 
+        1: escribir "Seleccione el tipo de entrada:"; // opción 1
+            Escribir "1.- VIP";
+            Escribir "2.- Platea";
+            Escribir "3.- Tribuna";
+            Escribir "4.- Galería";
+            leer aux;
+            Segun aux Hacer 
+                1: Escribir "El valor de su entrada es de: 13000"; //los valores son fijos, así que no necesitamos calculos
+                2: Escribir "El valor de su entrada es de: 10000";
+                3: Escribir "El valor de su entrada es de: 9000";
+                4: Escribir "El valor de su entrada es de: 6500";
+                De Otro Modo:
+                    Escribir "Opción equivocada";
+            FinSegun 
+        2: escribir "Seleccione el tipo de entrada:"; // opción 2
+            Escribir "1.- VIP";
+            Escribir "2.- Platea";
+            Escribir "3.- Tribuna";
+            Escribir "4.- Galería";
+            leer aux;
+            Segun aux Hacer
+                1: Escribir "El valor de su entrada es de: 25000"; //los valores son fijos, así que no necesitamos calculos
+                2: Escribir "El valor de su entrada es de: 19000";
+                3: Escribir "El valor de su entrada es de:  11000";
+                4: Escribir "El valor de su entrada es de:  7200";
+                De Otro Modo:
+                    Escribir "Opción equivocada";
+            FinSegun
+        De Otro Modo:
+            Escribir "Opción equivocada"; // si seleciona una opción que no corresponde el sistema le devuelve este mensaje
+    FinSegun
+
+FinProceso
